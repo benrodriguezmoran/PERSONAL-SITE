@@ -1,4 +1,4 @@
-export default function Blog() {
+export default function Home() {
     return (
         <main className="main">
           <h2>Lorem Ipsum adwadawdwadwalor Sit Amet</h2>

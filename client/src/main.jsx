@@ -1,11 +1,16 @@
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import App from './App.jsx';
 import './App.css';
+import App from './App.jsx';
 import Home from './pages/Home';
 import Error from './pages/Error';
 import About from './pages/About.jsx';
+import Blog from './pages/Blog.jsx';
+import Portfolio from './pages/Portfolio.jsx';
+import Support from './pages/Support.jsx'
+import Contact from './pages/Contact.jsx'
+import Gallery from './pages/Gallery.jsx'
+import '../scss/custom.scss';
 const router = createBrowserRouter([
     {
         path: '/',
@@ -19,7 +24,27 @@ const router = createBrowserRouter([
             {
                 path:'about',
                 element: <About />
-            }
+            },
+            {
+                path:'blog',
+                element: <Blog />
+            },
+            {
+                path:'portfolio',
+                element: <Portfolio />
+            },
+            {
+                path:'support',
+                element: <Support />
+            },
+            {
+                path:'contact',
+                element: <Contact />
+            },
+            {
+                path:'gallery',
+                element: <Gallery />
+            },
         ],
     },
 ]);

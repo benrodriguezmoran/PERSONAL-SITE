@@ -5,22 +5,40 @@ import Navbar from 'react-bootstrap/Navbar';
 import {LinkContainer} from 'react-router-bootstrap'
 export default function Navigate() {
   return (
-    <Navbar expand="sm" className='navbar-expand-lg bd-navbar fixed-top'>
-      <Container className="container-fluid bg-secondary">
-          <Navbar.Brand className="navbar-brand bg-primary fs-1 text-dark" href='/#'>
-            BRODRIGUEZ<span className="fs-5 text-dark">.dev</span>
-          </Navbar.Brand>
-          <Navbar.Collapse id="navbarSupportedContent">
-            <Nav className="navbar-nav nav-underline me-auto" defaultActiveKey="/">
-              <LinkContainer to="/">
-                <Nav.Link className="text-light" >/HOME</Nav.Link>
-              </LinkContainer>
-              <LinkContainer to="/about">
-                <Nav.Link className="text-light" >/ABOUT</Nav.Link>
-              </LinkContainer>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-    </Navbar>
+    // <header>
+      <Navbar expand="lg" fixed='top' as="header" className='m-0'>
+        <Container as="nav" className="p-0 bg-secondary shadow bg-gradient border border-primary border-2 rounded-3 wrap">
+            <Navbar.Brand className="bg-primary bg-gradient fs-1 fw-bold text-dark shadow p-0 m-0 me-4 px-3 rounded-2" href='/#'>
+              BRODRIGUEZ<span className="fs-5  text-light">.dev</span>
+            </Navbar.Brand>
+            <Navbar.Collapse id="navbarSupportedContent">
+              <Nav className="navbar-nav nav-underline me-auto fw-bold text-nowrap fs-6" >
+
+               <LinkContainer to="/">
+                 <Nav.Link className="text-light" >/ROOT</Nav.Link>
+               </LinkContainer>
+
+               <LinkContainer to="/portfolio">
+                 <Nav.Link className="text-light" >/PORTFOLIO</Nav.Link>
+               </LinkContainer>
+
+               <LinkContainer to="/gallery">
+                 <Nav.Link className="text-light" >/GALLERY</Nav.Link>
+               </LinkContainer>
+
+               <LinkContainer to="/blog">
+                 <Nav.Link className="text-light" >/BLOG</Nav.Link>
+               </LinkContainer>
+
+               <LinkContainer to="/about">
+                 <Nav.Link className="text-light" >/ABOUT</Nav.Link>
+               </LinkContainer>
+              
+
+              </Nav>
+            </Navbar.Collapse>
+          </Container>
+      </Navbar>
+    // </header>
   );
 }

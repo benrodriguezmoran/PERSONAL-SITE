@@ -1,12 +1,27 @@
-import { Link } from 'react-router-dom';
-
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import {LinkContainer} from 'react-router-bootstrap'
 export default function Footer() {
     return (
-        <footer className="nav-link fixed-bottom bg-secondary text-end ">
+        
+        <Navbar as="footer" fixed="bottom" expand="sm" className='p-0'>
+            <Container className='fs-8 bg-secondary rounded-top fw-bold bg-gradient border border-bottom-0 border-primary border-2'>
+                <Navbar.Collapse id="" className='d-flex justify-content-end'>
+                    <Nav as="ul" className="nav-underline text-nowrap p-1">
 
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0 me-2 fs-6">
-                <Link key={1} className="text-light fs-6" to="/contact">Contact</Link>
-            </ul>
-        </footer>
+                        <LinkContainer as="li" to="/contact">
+                            <Nav.Link className="text-light" >&gt;EMAIL</Nav.Link>
+                        </LinkContainer>
+
+                        <LinkContainer as="li" to="/support">
+                            <Nav.Link className="text-light" >&gt;SUPPORT</Nav.Link>
+                        </LinkContainer>
+
+                    </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
+        
     )
 }
