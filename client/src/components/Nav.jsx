@@ -6,13 +6,14 @@ import {LinkContainer} from 'react-router-bootstrap'
 export default function Navigate() {
   return (
     // <header>
-      <Navbar expand="lg" fixed='top' as="header" className='m-0'>
-        <Container as="nav" className="p-0 bg-secondary shadow bg-gradient border border-primary border-2 rounded-3 wrap">
+      <Navbar as="header" expand="lg" fixed='top' className='m-0'>
+        <Container as="nav" className="wrap p-0 bg-secondary shadow bg-gradient border border-primary border-2 rounded-3 wrap">
             <Navbar.Brand className="bg-primary bg-gradient fs-1 fw-bold text-dark shadow p-0 m-0 me-4 px-3 rounded-2" href='/#'>
               BRODRIGUEZ<span className="fs-5  text-light">.dev</span>
             </Navbar.Brand>
-            <Navbar.Collapse id="navbarSupportedContent">
-              <Nav className="navbar-nav nav-underline me-auto fw-bold text-nowrap fs-6" >
+            <Navbar.Toggle className="bg-primary" aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="navbarSupportedContent" className=''>
+              <Nav className="navbar-nav nav-underline me-auto fw-bold text-nowrap fs-6 p-1 px-3" >
 
                <LinkContainer to="/">
                  <Nav.Link className="text-light" >/ROOT</Nav.Link>

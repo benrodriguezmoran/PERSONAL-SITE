@@ -5,9 +5,9 @@ import {LinkContainer} from 'react-router-bootstrap'
 export default function Footer() {
     return (
         
-        <Navbar as="footer" fixed="bottom" expand="sm" className='p-0'>
-            <Container className='fs-8 bg-secondary rounded-top fw-bold bg-gradient border border-bottom-0 border-primary border-2'>
-                <Navbar.Collapse id="" className='d-flex justify-content-end'>
+        <Navbar as="footer" fixed="bottom" expand="lg" className='p-0'>
+            <Container className='bg-secondary rounded-top fw-bold bg-gradient border border-bottom-0 border-primary border-2'>
+                <Navbar.Collapse id="" className='justify-content-end'>
                     <Nav as="ul" className="nav-underline text-nowrap p-1">
 
                         <LinkContainer as="li" to="/contact">

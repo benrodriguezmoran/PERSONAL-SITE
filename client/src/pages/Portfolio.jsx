@@ -1,7 +1,11 @@
-export default function Home() {
+import Container from "react-bootstrap/esm/Container";
+
+export default function Portfolio() {
     return (
         <main className="main">
-          <h2>Lorem Ipsum adwadawdwadwalor Sit Amet</h2>
+          <Container className="h-100">
+            
+          </Container>
         </main>
       );
     } 
