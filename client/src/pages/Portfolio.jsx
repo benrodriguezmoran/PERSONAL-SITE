@@ -2,10 +2,10 @@ import Container from "react-bootstrap/esm/Container";
 
 export default function Portfolio() {
     return (
-        <main className="main">
+        
           <Container className="h-100">
             
           </Container>
-        </main>
+
       );
     } 
