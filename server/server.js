@@ -5,14 +5,13 @@ const { expressMiddleware } = require('@apollo/server/express4');
 
 // Import the two parts of a GraphQL schema
 const { typeDefs, resolvers } = require('./schemas');
-const mongoose = require('mongoose');
+const db = require('./config/connection');
 
 const PORT = process.env.PORT || 3001;
 const server = new ApolloServer({
   typeDefs,
   resolvers
 });
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/personal-site');
 
 const app = express();
 

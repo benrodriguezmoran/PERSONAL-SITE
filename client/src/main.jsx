@@ -11,6 +11,7 @@ import Support from './pages/Support.jsx'
 import Contact from './pages/Contact.jsx'
 import Gallery from './pages/Gallery.jsx'
 import '../scss/custom.scss';
+
 const router = createBrowserRouter([
     {
         path: '/',
