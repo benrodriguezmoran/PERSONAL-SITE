@@ -5,7 +5,7 @@ import {LinkContainer} from 'react-router-bootstrap'
 export default function Footer() {
     return (
         
-        <Navbar as="footer" fixed="bottom" className='p-0'>
+        <Navbar collapseOnSelect as="footer" fixed="bottom" className='p-0'>
             <Container className='bg-secondary rounded-top fw-bold bg-gradient border border-bottom-0 border-primary border-2 justify-content-end'>
                     <Nav as="ul" className="nav-underline text-nowrap p-1">
 
