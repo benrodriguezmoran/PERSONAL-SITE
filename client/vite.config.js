@@ -15,4 +15,7 @@ export default defineConfig({
       },
     },
   },
+  watchOptions: {
+    ignored: /node_modules/, 
+  }
 })
