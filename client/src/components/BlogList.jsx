@@ -1,13 +1,16 @@
-import Container from "react-bootstrap/esm/Container";
-
+import { Card } from "react-bootstrap";
+import { Link } from "react-router-dom"
 const Blog = ({blogs = []}) => {
     if (!blogs.length) {
-        return <Container as="main">no data</Container>
+        return <>no data</>
     }
 return (
-    <Container as='main' className="main text-light">
-        {blogs && blogs.map((blog) => (<h1 key={blog._id}>{blog.title}</h1>))}
-    </Container>
+    <>
+        {blogs && blogs.map((blog) => (
+        <Card key={blog._id}  className="text-light bg-transparent border border-primary border-5 rounded-3 wrap p-5 m-3"><Link to={`/blog/${blog._id}`} key={blog._id}>{blog.title}</Link>
+            
+        </Card>))}
+    </>
     );
 } 
 export default Blog 
