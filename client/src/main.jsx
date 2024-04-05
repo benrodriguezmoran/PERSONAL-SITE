@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Error from './pages/Error';
 import About from './pages/About.jsx';
 import Blog from './pages/Blog.jsx';
+import BlogPost from './pages/BlogPost.jsx';
 import Portfolio from './pages/Portfolio.jsx';
 import Support from './pages/Support.jsx'
 import Contact from './pages/Contact.jsx'
@@ -27,7 +28,11 @@ const router = createBrowserRouter([
             },{
                 path:'blog',
                 element: <Blog />
-            },{
+            },{ 
+                path:'/blog/:blogId',
+                element: <BlogPost/>
+            },            
+            {
                 path:'portfolio',
                 element: <Portfolio />
             },{
