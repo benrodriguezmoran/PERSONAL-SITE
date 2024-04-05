@@ -5,7 +5,7 @@ const Blog = () => {
     const { loading, data } = useQuery(QUERY_ALL_BLOGS)
     const blogs = data?.blogs || [];
     return (
-        <BlogList blogs={blogs} className="main "/>
+        <BlogList blogs={blogs} className=""/>
       );
     };
-export default Blog
+export default Blog 
