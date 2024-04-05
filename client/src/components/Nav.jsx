@@ -6,12 +6,14 @@ import {LinkContainer} from 'react-router-bootstrap'
 export default function Navigate() {
   return (
       <Navbar collapseOnSelect as="header" expand="lg" fixed='top' className='m-0 p-0'>
-        <Container className="wrap p-0 bg-secondary shadow bg-gradient border border-primary border-2 rounded-3 wrap">
+        <Container  className="p-0 bg-secondary shadow bg-gradient border border-primary border-2 rounded-3 wrap">
             <Navbar.Brand className="bg-primary bg-gradient fs-1 fw-bold text-dark shadow p-0 m-0 me-4 px-3 rounded-2"  href='/#'>
               BRODRIGUEZ<span className="fs-5  text-light">.dev</span>
             </Navbar.Brand>
-            <Navbar.Toggle className="border-0 mx-3 h-100 p-0" aria-controls="responsive-navbar-nav">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#3392FF" className="bi bi-caret-down-square-fill" viewBox="0 0 16 16"><path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm4 4a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 0 0 .748 0l4-4.5A.5.5 0 0 0 12 6z"/></svg>
+            <Navbar.Toggle className="border-2 mx-2 h-100 p-0" aria-controls="responsive-navbar-nav">
+            <svg alt="expand navigation" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#FFFFFF" className="bi bi-braces" viewBox="0 0 16 16">
+              <path d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6M13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6"/>
+            </svg>
             </Navbar.Toggle>
             <Navbar.Collapse id="navbarSupportedContent" className=''>
               <Nav as="nav" className="navbar-nav nav-underline me-auto fw-bold text-nowrap fs-6 p-1 px-4 " >
