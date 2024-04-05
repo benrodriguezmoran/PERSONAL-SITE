@@ -4,6 +4,7 @@ export const QUERY_BLOG = gql`
         blog(blogId: $blogId){
             _id
             title
+            content
         }
     }`
 export const QUERY_ALL_BLOGS = gql`
@@ -11,5 +12,14 @@ export const QUERY_ALL_BLOGS = gql`
         blogs {
             _id
             title
+            
+        }
+    }`
+export const QUERY_GALLERY = gql`
+    query image {
+        images {
+            _id
+            title
+            path
         }
     }`

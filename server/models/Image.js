@@ -1,13 +1,13 @@
 const { Schema, model } = require('mongoose');
 // const dateFormat = require('../utils/dateFormat');
-const blogSchema = new Schema({  
+const ImageSchema = new Schema({  
     title: {
         type: String,
         trim: true,
         required: true,
         
     },
-    content: {
+    path: {
         type:"String",
         required: true
     }
@@ -19,6 +19,6 @@ const blogSchema = new Schema({
 //     default: Date.now,
 //     get: (timestamp) => dateFormat(timestamp),
 //   },})
-const Blog = model('Blog', blogSchema);
+const Image = model('Image', ImageSchema);
 
-module.exports = Blog;
+module.exports = Image; 
