@@ -1,9 +1,19 @@
-export default function Home() {
+import { useQuery } from '@apollo/client';
+import GalleryList from '../components/GalleryList.jsx'
+import {QUERY_GALLERY} from '../utils/queries';
+import { Container } from "react-bootstrap"
+const Gallery = () => {
+    const { loading, data } = useQuery(QUERY_GALLERY)
+    const images = data?.images || [];
     return (
-        <main className="main">
-          <h1>Header 1</h1>
-          <h2>Header 2</h2>
-          <h3>Header 3</h3>
-        </main>
+      <>
+        <h1 className='justify-text-left position-relative border-bottom'>gallery</h1>
+        <Container className="justify-content-lg-center row row-cols-5">
+          
+          <GalleryList className="w-max-50" images={images} />
+        </Container>
+      </>
       );
-    } 
+    };
+export default Gallery 
+    
