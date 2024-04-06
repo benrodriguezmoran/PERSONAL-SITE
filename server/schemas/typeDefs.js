@@ -3,6 +3,8 @@ const typeDefs = `
         _id: ID
         title: String
         content: String
+        tidbit: String
+        date: String
     }
     type Image {
         _id: ID
@@ -15,4 +17,4 @@ const typeDefs = `
         images: [Image]
     }
 `;
-module.exports = typeDefs;
+module.exports = typeDefs;      
