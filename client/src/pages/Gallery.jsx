@@ -7,10 +7,10 @@ const Gallery = () => {
     const images = data?.images || [];
     return (
       <>
-        <h1 className='justify-text-left position-relative border-bottom'>gallery</h1>
-        <Container className="justify-content-lg-center row row-cols-5">
+        <h1 className='justify-text-left position-relative border-bottom p-2 m-1'>gallery</h1>
+        <Container className="justify-content-lg-left row row-cols-lg-4 row-cols-2 p-0 m-0">
           
-          <GalleryList className="w-max-50" images={images} />
+          <GalleryList className="" images={images} />
         </Container>
       </>
       );
