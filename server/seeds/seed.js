@@ -1,7 +1,7 @@
 const db = require('../config/connection');
 const { Blog , Image } = require('../models');
-const blogSeeds = require('./blogSeeds.json');
-const gallerySeeds = require('./gallerySeeds.json')
+const blogSeeds = require('./blogSeeds.js');
+const gallerySeeds = require('./gallerySeeds.js')
 const cleanDB = require('./cleanDB');
 
 db.once('open', async () => {
