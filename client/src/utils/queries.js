@@ -5,6 +5,8 @@ export const QUERY_BLOG = gql`
             _id
             title
             content
+            tidbit
+            date
         }
     }`
 export const QUERY_ALL_BLOGS = gql`
@@ -12,7 +14,8 @@ export const QUERY_ALL_BLOGS = gql`
         blogs {
             _id
             title
-            
+            tidbit
+            date
         }
     }`
 export const QUERY_GALLERY = gql`
