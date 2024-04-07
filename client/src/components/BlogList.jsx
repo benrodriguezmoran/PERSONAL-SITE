@@ -11,7 +11,7 @@ return (
         <Card key={blog._id} className="text-light bg-transparent border border-white border-1 rounded-3 m-2 wrap">
             <Card.Body>
             <Card.Title className="fs-3">    
-                <Link to={`/blog/${blog._id}`} key={blog._id}>{blog.title}</Link> 
+                <Link to={`/blog/${blog.path}`} key={blog._id}>{blog.title}</Link> 
             </Card.Title>
             <h6 className="border-bottom border-1"><strong>
             {blog.date.split('at')[0]}

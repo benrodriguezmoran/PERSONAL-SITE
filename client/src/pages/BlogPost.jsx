@@ -5,9 +5,9 @@ import { useQuery } from '@apollo/client';
 import { useParams } from 'react-router-dom';
 
 const BlogPost = () => {
-    const {blogId} = useParams();
+    const {path} = useParams();
     const { loading, data } = useQuery(QUERY_BLOG, {
-        variables: { blogId: blogId },
+        variables: { path : path },
       });
     const blog = data?.blog || [];
     return (
