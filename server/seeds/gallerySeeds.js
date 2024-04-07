@@ -4,6 +4,6 @@ fs.readdirSync("/home/ben/Documents/PROJECTS/PERSONAL-SITE/client/public/images"
     var temp = `{"title":"${file}","path":"/images/${file}"}`;
     gallerySeeds.push(JSON.parse(temp));
 });
-console.log(gallerySeeds);
+
 
 module.exports = gallerySeeds;

@@ -3,7 +3,7 @@ const {Blog, Image} = require('../models');
 const resolvers = {
     Query: {
         blogs: async (parent) => {
-            return Blog.find();
+            return Blog.find().sort({ date: -1 });
           },
         blog: async (parent, { path }) => {
             return Blog.findOne({ path : path });

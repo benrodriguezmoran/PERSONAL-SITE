@@ -8,6 +8,7 @@ export const QUERY_BLOG = gql`
             tidbit
             date
             path
+            path
         }
     }`
 export const QUERY_ALL_BLOGS = gql`
@@ -17,6 +18,7 @@ export const QUERY_ALL_BLOGS = gql`
             title
             tidbit
             date
+            path
             path
         }
     }`

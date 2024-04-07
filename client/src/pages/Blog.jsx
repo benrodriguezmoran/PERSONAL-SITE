@@ -7,8 +7,8 @@ const Blog = () => {
     const blogs = data?.blogs || [];
     return (
       <>
-      <h1 className='justify-text-left border-bottom p-2 m-1'>blog</h1>
-        <div className='row row-cols-1 row-cols-md-2 row-cols-lg-4 p-1 g-2'>
+      <h1 className='justify-text-left border-bottom p-2 m-1'>&gt;blog</h1>
+        <div className='row row-cols-1 row-cols-md-2 row-cols-lg-4 p-4 g-2'>
           <BlogList blogs={blogs}/>
         </div>
         

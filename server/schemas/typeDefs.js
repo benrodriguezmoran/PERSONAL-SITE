@@ -4,6 +4,7 @@ const typeDefs = `
         title: String
         content: String
         tidbit: String
+        ref: String
         date: String
         path: String
     }

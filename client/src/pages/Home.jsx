@@ -6,6 +6,9 @@ import { useQuery } from '@apollo/client';
 export default function Home() {
   const { loading, data } = useQuery(QUERY_GALLERY)
     const images = data?.images || [];
+    if (loading){
+      return (<>Loading</>);
+    }
     return (
       <>
       <h1 className='justify-text-left position-relative border-bottom p-2 m-1'>@brodriguez&gt;</h1>

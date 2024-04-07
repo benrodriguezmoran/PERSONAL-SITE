@@ -1,11 +1,11 @@
 import { Image, Card, Ratio, Button, Modal } from "react-bootstrap";
 import { useState } from "react";
 var imagesIn = [];
+let lArrLen = 4;
 function shuffle(array){
-            let idx = array.length;
+            let idx = array.length -1;
             let tempArr = Array.from(array);
-            while (idx !=0){
-                console.log('test')
+            while (idx > 1){
                 let rIdx = Math.floor(Math.random() * idx);
                 var temp = tempArr[idx];
                 tempArr[idx] = tempArr[rIdx];
@@ -15,17 +15,24 @@ function shuffle(array){
         return(tempArr);
         };
 const GalleryList = ({images = [], slice = 0}) => {
+    var arrLen = slice = 0 ? images.length : slice;
+
+    if (arrLen != lArrLen || imagesIn.length == 0){
+        imagesIn = Array.from(images);
+        if (slice > 0){
+            imagesIn = shuffle(imagesIn);
+        }
+        lArrLen = arrLen;
+    }
     if (!images.length) {
         return <>no data</>
     }
     const [show, setShow] = useState(false);
     const [modalData, setModalData] = useState(false);
     if (slice != 0){
-        imagesIn = Array.from(images);
-        imagesIn = shuffle(imagesIn);
         imagesIn = Array.from(imagesIn.slice(0,slice));
-      }
-      else {imagesIn = Array.from(images)}
+    }
+
 return (
     <>
         {imagesIn && imagesIn.map((image, idx) => (
