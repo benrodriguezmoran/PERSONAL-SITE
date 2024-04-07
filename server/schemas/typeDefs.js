@@ -5,6 +5,7 @@ const typeDefs = `
         content: String
         tidbit: String
         date: String
+        path: String
     }
     type Image {
         _id: ID
@@ -13,7 +14,7 @@ const typeDefs = `
     }
     type Query {
         blogs: [Blog]
-        blog(blogId: ID!): Blog
+        blog(path: String!): Blog
         images: [Image]
     }
 `;

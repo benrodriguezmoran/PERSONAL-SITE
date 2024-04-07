@@ -1,12 +1,13 @@
 import { gql } from '@apollo/client';
 export const QUERY_BLOG = gql`
-    query getBlog($blogId: ID!) {
-        blog(blogId: $blogId){
+    query getBlog($path: String!) {
+        blog(path: $path){
             _id
             title
             content
             tidbit
             date
+            path
         }
     }`
 export const QUERY_ALL_BLOGS = gql`
@@ -16,6 +17,7 @@ export const QUERY_ALL_BLOGS = gql`
             title
             tidbit
             date
+            path
         }
     }`
 export const QUERY_GALLERY = gql`

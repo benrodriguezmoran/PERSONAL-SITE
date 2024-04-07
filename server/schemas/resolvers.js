@@ -5,8 +5,8 @@ const resolvers = {
         blogs: async (parent) => {
             return Blog.find();
           },
-        blog: async (parent, { blogId }) => {
-            return Blog.findOne({ _id: blogId });
+        blog: async (parent, { path }) => {
+            return Blog.findOne({ path : path });
           },
         images: async (parent) => {
             return Image.find();

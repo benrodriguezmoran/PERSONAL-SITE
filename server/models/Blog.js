@@ -19,14 +19,13 @@ const blogSchema = new Schema({
         type: Date,
         default: Date.now,
         get: (timestamp) => dateFormat(timestamp),
+    },
+    path : {
+        type: String,
+        required: true
     }
 });
-        //     ,
-    // createdAt: {
-    // type: Date,
-    // default: Date.now,
-    // get: (timestamp) => dateFormat(timestamp),
-//   },})
+
 const Blog = model('Blog', blogSchema);
 
 module.exports = Blog;
