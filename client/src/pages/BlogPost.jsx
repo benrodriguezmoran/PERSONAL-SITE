@@ -13,7 +13,7 @@ const BlogPost = () => {
     return (
         <>
             <h1 className="justify-text-left border-bottom p-2 m-1">{blog.title}</h1>
-                <Markdown className="text-light p-3 m-3" rehypePlugins={[rehypeRaw]}>{blog.content}</Markdown>
+                <Markdown className="text-light p-2 m-1" rehypePlugins={[rehypeRaw]}>{blog.content}</Markdown>
             
         </>
 )};
