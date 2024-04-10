@@ -32,13 +32,13 @@ const GalleryList = ({images = [], slice = 0}) => {
     if (slice != 0){
         imagesIn = Array.from(imagesIn.slice(0,slice));
     }
-
+    
 return (
     <>
         {imagesIn && imagesIn.map((image, idx) => (
             <Button key={idx}  className="p-1 m-0 rounded-3 " variant="link" 
             onClick={(event) => {event.preventDefault(true); setShow(true); setModalData(image)}}>
-                <Ratio className="rounded-3 shadow-lg" style={{
+                <Ratio className="image rounded-3 shadow-lg" style={{
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundImage: `url(${image.path})`}} 
@@ -48,7 +48,7 @@ return (
                 
             </Button>
         ))}
-            <Modal onClick={() => {setShow(false)}} className="text-light modal-md border-1" centered  show={show} onHide={() => setShow(false)}>
+            <Modal onClick={() => {setShow(false)}} className="text-light modal-lg border-1" centered  show={show} onHide={() => setShow(false)}>
                 <Modal.Header className="border-0" >{modalData.title}</Modal.Header>
                 <Image className="rounded-3" src={modalData.path}/>
                    
