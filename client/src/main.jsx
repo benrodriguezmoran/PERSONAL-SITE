@@ -4,7 +4,6 @@ import './App.css';
 import App from './App.jsx';
 import Home from './pages/Home';
 import Error from './pages/Error';
-import About from './pages/About.jsx';
 import Blog from './pages/Blog.jsx';
 import BlogPost from './pages/BlogPost.jsx';
 import Project from './pages/Project.jsx';
@@ -22,9 +21,6 @@ const router = createBrowserRouter([
             {
                 index: true,
                 element: <Home />,
-            },{
-                path:'about',
-                element: <About />
             },{
                 path:'blog',
                 element: <Blog />
