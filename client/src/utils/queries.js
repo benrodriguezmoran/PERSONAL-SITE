@@ -8,7 +8,6 @@ export const QUERY_BLOG = gql`
             tidbit
             date
             path
-            path
         }
     }`
 export const QUERY_ALL_BLOGS = gql`
@@ -19,7 +18,6 @@ export const QUERY_ALL_BLOGS = gql`
             tidbit
             date
             path
-            path
         }
     }`
 export const QUERY_GALLERY = gql`
@@ -28,5 +26,28 @@ export const QUERY_GALLERY = gql`
             _id
             title
             path
+        }
+    }`
+export const QUERY_PROJECT = gql`
+    query getProject($path: String!) {
+        project(path: $path){
+            _id
+            title
+            content
+            tidbit
+            date
+            path
+            image
+        }
+    }`
+export const QUERY_ALL_PROJECTS = gql`
+    query getAllProjects {
+        projects {
+            _id
+            title
+            tidbit
+            date
+            path
+            image
         }
     }`
