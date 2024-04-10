@@ -1,4 +1,4 @@
-const {Blog, Image} = require('../models');
+const {Blog, Image, Project} = require('../models');
 
 const resolvers = {
     Query: {
@@ -10,7 +10,13 @@ const resolvers = {
           },
         images: async (parent) => {
             return Image.find();
-          }
+          },
+        projects: async (parent) => {
+          return Project.find().sort({ date: -1 });
+        },
+        project: async (parent, { path }) => {
+          return Project.findOne({ path : path });
+        }
         
     }
 }
