@@ -6,7 +6,12 @@ $popover-bg: #333;
 $icon-link-icon-transform:    translate3d(0, -.25em, 0);
 $icon-link-icon-transition:   .2s ease-in-out transform;
 $tooltip-color: white;
-$tooltip-opacity:                   .95;
+$tooltip-opacity:                   1;
+$tooltip-font-size: 1.1rem;
+$tooltip-max-width:                 250px;
+
+$tooltip-padding-y:                 1.5rem * .25;
+$tooltip-padding-x:                 1.5rem * .5;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 // #3b577c
