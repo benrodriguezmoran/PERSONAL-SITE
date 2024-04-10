@@ -33,7 +33,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Nav />
-      <Container as='main' className="border border-dark border-2 shadow justify-content-center text-light p-1">
+      <Container as='main' className="font-monospace border border-dark border-2 shadow justify-content-center text-light p-2">
         <Outlet />
       </Container>
       <Footer />

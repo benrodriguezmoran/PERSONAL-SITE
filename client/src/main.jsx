@@ -7,10 +7,10 @@ import Error from './pages/Error';
 import About from './pages/About.jsx';
 import Blog from './pages/Blog.jsx';
 import BlogPost from './pages/BlogPost.jsx';
+import Project from './pages/Project.jsx';
 import Portfolio from './pages/Portfolio.jsx';
-import Support from './pages/Support.jsx'
-import Contact from './pages/Contact.jsx'
-import Gallery from './pages/Gallery.jsx'
+import Support from './pages/Support.jsx';
+import Gallery from './pages/Gallery.jsx';
 import '../scss/custom.scss';
 
 const router = createBrowserRouter([
@@ -31,16 +31,15 @@ const router = createBrowserRouter([
             },{ 
                 path:'/blog/:path',
                 element: <BlogPost/>
-            },            
-            {
+            },{ 
+                path:'/portfolio/:path',
+                element: <Project/>
+            },{
                 path:'portfolio',
                 element: <Portfolio />
             },{
                 path:'support',
                 element: <Support />
-            },{
-                path:'contact',
-                element: <Contact />
             },{
                 path:'gallery',
                 element: <Gallery />
