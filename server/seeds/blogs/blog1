@@ -1,4 +1,4 @@
 { "title" : "Old web, New me", 
-"date":  "2024-04-06T06:00:00.000+00:00",
+"date":  "2024-03-08T06:00:00.000+00:00",
 "tidbit": "The start of this very blog",
-"content": "# example <br>\n## white space"
+"content": "<span className='px-3'></span>I have recently graduated Michigan State's Full-Stack web development course, and I figured to put my newfound skill to use and make myself a personal site. It's an idea I've always liked, my elders tend to mention something once called MySpace, perhaps out of naiivity I've longed for something similar... At least for myself. Now that's in my grasp, lets give it a shot. <br><br> <span className='px-3'></span>My class ended with teaching MERN (MongoDB, Express, React, NodeJS) architecture"
