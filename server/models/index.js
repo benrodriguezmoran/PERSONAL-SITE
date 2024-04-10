@@ -1,4 +1,5 @@
 const Blog = require('./Blog');
-const Image = require('./Image')
+const Image = require('./Image');
+const Project = require('./Project');
 
-module.exports = { Blog, Image };
+module.exports = { Blog, Image, Project };
