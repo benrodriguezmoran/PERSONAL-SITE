@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "start": "vite",
+    "dev": "vite --host",
+    "start": "vite preview",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -13,6 +13,7 @@
   "dependencies": {
     "@apollo/client": "^3.7.15",
     "bootstrap": "^5.3.3",
+    "bootstrap-5-breakpoint-react-hook": "^1.1.0",
     "graphql": "^16.6.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
