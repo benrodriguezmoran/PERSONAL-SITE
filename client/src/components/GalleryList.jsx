@@ -1,4 +1,4 @@
-import { Image, Card, Ratio, Button, Modal } from "react-bootstrap";
+import { Image, Ratio, Button, Modal } from "react-bootstrap";
 import { useState } from "react";
 var imagesIn = [];
 let lArrLen = 4;
