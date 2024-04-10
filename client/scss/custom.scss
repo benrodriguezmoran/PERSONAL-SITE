@@ -1,7 +1,12 @@
-
 $blue: #33a3ff;
-$secondary: #3b577c;
+$secondary: #253449;
 $body-bg: #182838;
 $fontsize-7: 1.5rem;
+$popover-bg: #333;
+$icon-link-icon-transform:    translate3d(0, -.25em, 0);
+$icon-link-icon-transition:   .2s ease-in-out transform;
+$tooltip-color: white;
+$tooltip-opacity:                   .95;
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 // #3b577c

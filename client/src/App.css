@@ -6,10 +6,12 @@
   /* --bs-tertiary-color: purple */
 }
 body {
-  background-attachment: fixed
+  background-attachment: fixed;
+  font-family: "Mono", monospace
 }
 main {
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 footer {
@@ -34,4 +36,10 @@ footer {
   font-family: "Mono";
   src: url("./fonts/NotoMono-Regular.ttf")
   format("truetype");
+}
+
+.image:hover {
+  filter: brightness(.8);
+  transition: .3s;
+  transition-timing-function: ease-in-out;
 }
