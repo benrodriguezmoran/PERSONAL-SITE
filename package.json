@@ -1,5 +1,6 @@
 {
-  "name": "brodriguez",
+  "name": "brodriguez-site",
+  "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",

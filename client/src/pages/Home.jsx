@@ -1,9 +1,9 @@
 import GalleryList from '../components/GalleryList.jsx'
 import { Container, Row, Col, Card, Ratio } from "react-bootstrap"
+import { about1, about2, about3 } from './content/homeContent.js'
 import { Link } from "react-router-dom"
 import Markdown from 'react-markdown'
 import useBreakpoint from 'bootstrap-5-breakpoint-react-hook';
-import { about1, about2, about3 } from './content/homeContent.js'
 import rehypeRaw from 'rehype-raw'
 import { useQuery } from '@apollo/client';
 import {QUERY_PROJECT, QUERY_GALLERY} from '../utils/queries'
