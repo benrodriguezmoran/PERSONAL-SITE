@@ -19,13 +19,15 @@ const Project = () => {
     return (
         <>  
         <h1 className='justify-text-left border-bottom py-2 m-1 fw-bold '><LinkContainer className='text-primary ' to="/portfolio"><a className='pe-auto link-primary link-underline-opacity-25 link-underline-opacity-100-hover'>&gt;portfolio</a></LinkContainer><br className='d-xl-none d-flex'></br>/{project.title}</h1>
-             <Ratio onClick={(event) => {event.preventDefault(true); setShow(true); setModalData(projectImg)}} className="rounded-3 shadow-lg" style={{
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundImage: `url(${projectImg})`}} 
-                aspectRatio="16x9">
-                <></>
+             <div className='border-bottom'>
+                <Ratio onClick={(event) => {event.preventDefault(true); setShow(true); setModalData(projectImg)}} className="rounded-3 shadow-lg my-2 py-2" style={{
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        backgroundImage: `url(${projectImg})`}} 
+                    aspectRatio="16x9">
+                    <></>
             </Ratio>
+            </div>
                 <Markdown className="text-light p-2 m-1" rehypePlugins={[rehypeRaw]}>{project.content}</Markdown>
             <Modal onClick={() => {setShow(false)}} className="text-light modal-xl border-1" centered  show={show} onHide={() => setShow(false)}>
                 <Image className="rounded-3" src={modalData}/>
