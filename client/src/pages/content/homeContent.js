@@ -14,14 +14,13 @@ const str2 = `
 #### <strong>I build things</strong>
 </div>
 <span className="px-3"></span>I am a huge 3d printing enthusiast, own 3 printers, and one of my jobs involved maintaining a fleet. Most of my other hobbies revolve around problem solving: be it programming, electronics, or mechanical design. I do these things for a kind of entertainment, some satisfaction of finally putting a challenge to rest. 
-Such an ambitious long term challenge is my as yet Untitled Spacegame, which you can explore 
 `
 const str3 = `
 <div className="text-center border-bottom mb-2">\n
 #### <strong>I built this page</strong>
 </div>
-<span className="px-3"></span>You can only learn what you don't know through necessity. My certificate class went very quick; I learned a lot, but needed to understand more. Now this page gave me 
-a practical demo, and gives me a place to dedicate my personal work to and advance my software career.
+<span className="px-3"></span>You can only learn what you don't know through necessity, so I learned everything to host this page. Certainly a lot more than necessary, but it gives me  
+a practical demonstration of my knowledge, and a place to dedicate my personal work to and advance my software career.
 
 `
 export function about1() {
