@@ -2,4 +2,4 @@
 "date":  "2024-07-05T06:00:00.000+00:00",
 "tidbit": "Siteception!",
 "image": "/projects/site.png",
-"content": "# example <br>\n## white space"
+"content": "<span className='px-3'></span>After my certificate class, I sought to learn some more on the technologies we barely grazed. MERN architechure is what we ended the class with, and a document based database would be fitting for a blog, so easy pick there. I already have a Proxmox server running hosting my Homeassistant instance, also easy. But I'll need a few more crucial pieces, namely I'll need Caddy as a reverse proxy to handle connections to this site - as well as my HA instance. <br><br>\n### Setup\n<br><span className='px-3'></span>"
