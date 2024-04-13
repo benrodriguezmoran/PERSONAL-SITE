@@ -41,7 +41,7 @@ return (
                 <Ratio className="image rounded-3 shadow-lg" style={{
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
-                    backgroundImage: `url(${image.path})`}} 
+                    backgroundImage: `url(/thumbnail/thumb-${image.title})`}} 
                 aspectRatio="1x1">
                 <></>
                 </Ratio>
