@@ -1,5 +1,5 @@
 const fs = require('fs')
-const path = "/home/ben/Documents/PROJECTS/PERSONAL-SITE/server/seeds/projects/"
+const path = "./seeds/projects/"
 var projectSeeds = []
 fs.readdirSync(path).forEach(file => {
     var temp = fs.readFileSync(`${path}/${file}`).toString();
