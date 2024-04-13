@@ -3,8 +3,8 @@ import { Card, Container, Ratio } from "react-bootstrap";
 import { Link } from "react-router-dom"
 var ratio = 7;
 const Portfolio = ({projects = []}) => {
-    const breakpointsSm = ['xs','sm','md'];
-    const breakpointsLg = ['xl','xxl'];
+    const breakpointsSm = ['sm'];
+    const breakpointsLg = ['lg','xl','xxl'];
     var currentBr = useBreakpoint();
     if (!projects.length) {
         return <>no data</>
@@ -14,9 +14,12 @@ const Portfolio = ({projects = []}) => {
         ratio = 8;
     }
     else if (breakpointsSm.includes(currentBr) == true){
+        ratio = 9;
+    }
+    else if (currentBr == 'md'){
         ratio = 10;
     }
-    else {ratio = 9;}
+    else {ratio = 10;}
 
 return (
     <>
