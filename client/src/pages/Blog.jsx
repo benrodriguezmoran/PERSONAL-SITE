@@ -8,7 +8,7 @@ const Blog = () => {
     return (
       <>
       <h1 className='justify-text-left border-bottom py-2 m-1 fw-bold'><span className='text-primary'>&gt;</span>blog</h1>
-        <div className='row row-cols-1 row-cols-md-2 row-cols-lg-4 p-1 g-2'>
+        <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 p-1 g-2'>
           <BlogList blogs={blogs}/>
         </div>
         
