@@ -1,6 +1,5 @@
 {
-  "name": "personal-server",
-  "private": true,
+  "name": "apollo-school",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
