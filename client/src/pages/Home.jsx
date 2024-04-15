@@ -16,8 +16,8 @@ export default function Home() {
         variables: { path : "site" },
       });    
   const galleryData = useQuery(QUERY_GALLERY);
-  var project = projectData.data?.project;
-  var site = siteData.data?.project;
+  var project = projectData.data?.project || [];
+  var site = siteData.data?.project || [];
   const images = galleryData.data?.images || [];
   const loading = galleryData.loading || projectData.loading || siteData.loading;
 
