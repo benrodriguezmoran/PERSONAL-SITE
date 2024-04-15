@@ -19,7 +19,7 @@ export default function Home() {
   var project = projectData.data?.project;
   var site = siteData.data?.project;
   const images = galleryData.data?.images || [];
-  const loading = galleryData.loading || projectData.loading;
+  const loading = galleryData.loading || projectData.loading || siteData.loading;
 
 
   const breakpoints = ['xs','sm','md']
