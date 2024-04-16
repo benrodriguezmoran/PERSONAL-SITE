@@ -16,6 +16,8 @@ function shuffle(array){
         };
 const GalleryList = ({images = [], slice = 0}) => {
     var arrLen = slice = 0 ? images.length : slice;
+    const [show, setShow] = useState(false);
+    const [modalData, setModalData] = useState(false);
 
     if (arrLen != lArrLen || imagesIn.length == 0){
         imagesIn = Array.from(images);
@@ -27,8 +29,6 @@ const GalleryList = ({images = [], slice = 0}) => {
     if (!images.length) {
         return <>no data</>
     }
-    const [show, setShow] = useState(false);
-    const [modalData, setModalData] = useState(false);
     if (slice != 0){
         imagesIn = Array.from(imagesIn.slice(0,slice));
     }
