@@ -109,17 +109,7 @@ export default function Home() {
               </Card>
           </Link>
         </Row>
-        <Row className='p-0 row-cols-lg-2 row-cols-1 py-3 my-3 border-bottom d-flex align-items-center' >
-          <Col className='p-1 py-3' >
-            <Ratio className="rounded-3 shadow-lg " style={{
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundImage: 'url(/images/certificate.png)'}} 
-                aspectRatio={1/1.7}>
-              <></>
-            </Ratio>
-          </Col>
-        </Row>
+        
       </Container>
       </>
       );
