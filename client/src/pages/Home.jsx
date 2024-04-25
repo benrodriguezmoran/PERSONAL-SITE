@@ -57,7 +57,7 @@ export default function Home() {
               <Markdown rehypePlugins={[rehypeRaw]}>
                 {about2()}
               </Markdown>
-              Explore my projects at my <Link className='col p-0 link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover' to="/portfolio">portfolio</Link>.
+              Find all my projects on my <Link className='col p-0 link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover' to="/portfolio">portfolio</Link>.
             </div> 
 
           </Col>

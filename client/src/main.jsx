@@ -10,6 +10,7 @@ import Project from './pages/Project.jsx';
 import Portfolio from './pages/Portfolio.jsx';
 import Support from './pages/Support.jsx';
 import Gallery from './pages/Gallery.jsx';
+import Bio from './pages/Bio.jsx';
 import '../scss/custom.scss';
 
 const router = createBrowserRouter([
@@ -39,6 +40,9 @@ const router = createBrowserRouter([
             },{
                 path:'gallery',
                 element: <Gallery />
+            },{
+                path:'bio',
+                element: <Bio />
             },
         ],
     },
