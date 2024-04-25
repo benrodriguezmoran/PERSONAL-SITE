@@ -34,9 +34,9 @@ export default function Navigate() {
                   <Nav.Link className="text-light" >/BLOG</Nav.Link>
                 </LinkContainer>
                 
-                {/* <LinkContainer active={false}  to="/about">
-                  <Nav.Link className="text-light" >/ABOUT</Nav.Link>
-                </LinkContainer> */}
+                <LinkContainer active={false}  to="/bio">
+                  <Nav.Link className="text-light" >/BIO</Nav.Link>
+                </LinkContainer>
                               
               </Nav>
             </Navbar.Collapse>
