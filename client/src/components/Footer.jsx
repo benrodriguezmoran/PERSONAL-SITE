@@ -13,7 +13,7 @@ export default function Footer({ id, children, title }) {
     
     return (
         <>
-        <Navbar collapseOnSelect as="footer" fixed="bottom" className='p-0'>
+        <Navbar collapseOnSelect as="footer"  className='p-0 '>
             <Container className='bg-secondary rounded-top fw-bold bg-gradient border border-bottom-0 border-dark border-2'>
                 <div className='m-0 p-0 justify-content-end'>
                     <Resources className=""/>
@@ -62,7 +62,7 @@ export default function Footer({ id, children, title }) {
         </Navbar>
         <Offcanvas className='text-light' show={show} onHide={handleClose} placement='end'>
             <Offcanvas.Header closeButton>
-                <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+                <Offcanvas.Title className='fs-2'>email</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body >
             Some text as placeholder. In real life you can have the elements you
