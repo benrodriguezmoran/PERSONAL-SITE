@@ -9,7 +9,7 @@ const Gallery = () => {
     console.log(loading)
     for (let i = 0; i < 25; i++) {
       rows.push(<div key={i} >
-      <Ratio className="image rounded-3 shadow-lg p-0 m-1 bg-secondary rounded-3 placeholder-wave" aspectRatio="1x1">
+      <Ratio className="image shadow-lg p-1 m-0 bg-secondary rounded-3 placeholder-wave" aspectRatio="1x1">
       <></>
       </Ratio>
       </div>);
@@ -23,7 +23,7 @@ const Gallery = () => {
     return (
       <>
         <h1 className='justify-text-left position-relative border-bottom py-2 m-1 fw-bold'><span className='text-primary'>&gt;</span>gallery</h1>
-        <Container className="justify-content-lg-left row row-cols-lg-4 row-cols-2 p-0 m-0">
+        <Container className="justify-content-lg-left row row-cols-lg-4 row-cols-2 p-0 m-0 ">
           
           <GalleryList className="" images={images} loading={loading} />
         </Container>
