@@ -10,7 +10,7 @@ return (
         <div className="col" key={blog._id} >
         <Link to={`/blog/${blog.path}`}>
         <Ratio aspectRatio={3 / 4}>
-        <Card className="text-light bg-transparent  border border-white border-1 rounded-3 m-1 wrap shadow" >
+        <Card className="text-light bg-transparent  border border-white border-1 rounded-3 m-0 wrap shadow" >
             <Card.Body className="" >
             <Card.Title className="text-primary link-offset-1 fs-3">    
                 <strong> {blog.title} </strong>
