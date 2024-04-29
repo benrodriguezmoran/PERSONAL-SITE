@@ -48,7 +48,8 @@ function App() {
         color: 0x444444,
         backgroundColor: 0x0,
         maxDistance: 14.00,
-        spacing: 15
+        spacing: 15,
+        points:10
       }))
     }
     return () => {
@@ -63,7 +64,7 @@ function App() {
         <Outlet />
       </Container>
       <Footer />
-      <div ref={vantaRef} className='z-n1 position-fixed top-50 start-50 translate-middle vw-100 vh-100 p-0 m-0'></div>
+      <div ref={vantaRef} className='z-n1 position-fixed top-50 start-50 translate-middle w-100 h-100 p-0 m-0'></div>
       </ApolloProvider>
     
   );
