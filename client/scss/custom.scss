@@ -1,6 +1,6 @@
 $blue: #33a3ff;
-$secondary: #253449;
-$body-bg: #182838;
+$secondary: hsl(218, 61%, 13%);
+$body-bg: #000000;
 $fontsize-7: 1.5rem;
 $popover-bg: #333;
 $icon-link-icon-transform:    translate3d(0, -.25em, 0);
@@ -11,7 +11,7 @@ $tooltip-font-size: 1.1rem;
 $tooltip-max-width:                 250px;
 
 $tooltip-padding-y:                 1.5rem * .25;
-$tooltip-padding-x:                 1.5rem * .5;
+$tooltip-padding-x:                 1.5rem * .5; 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 // #3b577c
