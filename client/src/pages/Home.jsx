@@ -62,7 +62,7 @@ export default function Home() {
 
           </Col>
           <Link className='col p-1 pb-3 order-lg-0 py-3' style={{textDecoration: "none"}} to={`/portfolio/spacegame`}>
-              <Card className=" text-light bg-tertiary bg-gradient border-white border-1 rounded-3 m-0 p-0 wrap shadow" >
+              <Card className=" text-light bg-secondary bg-opacity-75 border-white border-1 rounded-3 m-0 p-0 wrap shadow" >
                 <Ratio aspectRatio={1/2}>
                   <Card.Img variant="top" className="m-0 p-0" style={{ 
                     backgroundSize: 'cover',
@@ -89,8 +89,8 @@ export default function Home() {
             </Markdown>
             </div>
           </Col>
-          <Link className='col p-1 pb-3 order-lg-0 py-3' style={{textDecoration: "none"}} to={`/portfolio/spacegame`}>
-              <Card className=" text-light bg-tertiary bg-gradient border-white border-1 rounded-3 m-0 p-0 wrap shadow" >
+          <Link className='col p-1 pb-3 order-lg-0 py-3' style={{textDecoration: "none"}}  to={`/portfolio/spacegame`}>
+              <Card className=" text-light bg-secondary bg-opacity-75 border-white border-1 rounded-3 m-0 p-0 wrap shadow" >
                 <Ratio aspectRatio={1/2}>
                   <Card.Img variant="top" className="m-0 p-0" style={{ 
                     backgroundSize: 'cover',
