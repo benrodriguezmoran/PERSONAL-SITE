@@ -3,9 +3,7 @@ import { Container, Col, Row, OverlayTrigger, Tooltip } from 'react-bootstrap'
 export default function Resources() {
     const renderTooltip = (props) => (
         <Tooltip id="button-tooltip" className="" {...props}>
-          Selfhosted! Made possible with:
-          React, Bootstrap, NodeJS,
-          Proxmox, Express, MongoDB and more.
+          Selfhosted!<br/>Made possible using Proxmox, Caddy, React, and much more.
         </Tooltip>
       );
     return (
@@ -15,7 +13,7 @@ export default function Resources() {
     <div className='vr my-1'></div>
 
     <OverlayTrigger
-      placement="right"
+      placement="top"
       delay={{ show: 50, hide: 400 }}
       overlay={renderTooltip}
       customClass='custom-tooltip text-light'
