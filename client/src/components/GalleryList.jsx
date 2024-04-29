@@ -49,7 +49,7 @@ return (
             </Button>
         ))}
             <Modal onClick={() => {setShow(false)}} className="text-light modal-lg border-1" centered  show={show} onHide={() => setShow(false)}>
-                <Modal.Header className="border-0" >{modalData.title}</Modal.Header>
+                <Modal.Header closeButton closeVariant="white" className="border-0 bg-secondary" >{modalData.title}</Modal.Header>
                 <Image className="rounded-3" src={modalData.path}/>
                    
             </Modal>
