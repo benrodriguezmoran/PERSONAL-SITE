@@ -6,7 +6,6 @@ const Gallery = () => {
     const { loading, data } = useQuery(QUERY_GALLERY)
     const images = data?.images || [];
     const rows = [];
-    console.log(loading)
     for (let i = 0; i < 25; i++) {
       rows.push(<div key={i} >
       <Ratio className="image shadow-lg p-1 m-0 bg-secondary rounded-3 placeholder-wave" aspectRatio="1x1">
