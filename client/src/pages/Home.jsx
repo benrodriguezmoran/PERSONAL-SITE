@@ -34,7 +34,7 @@ export default function Home() {
   }else{slice = 6;}
   return (
       <>
-      <h1 className='justify-text-left position-relative border-bottom p-0 py-2 m-1 fw-bold'><span className='text-primary'>&gt;</span>ben_rodriguez</h1><strong className='px-2'>fullstack web dev // game dev</strong> 
+      <h1 className='justify-text-left position-relative border-bottom p-0 py-2 m-1 fw-bold'><span className='text-primary'>&gt;</span>ben_rodriguez</h1><strong className='px-2'>fullstack web & game dev // C.S. student</strong> 
       <Container>
         <Row className='row-cols-lg-2 row-cols-1 pb-3 my-3 border-bottom' >
         <Col className='text-light p-lg-3 p-lg-1 p-3 py-3 lh-lg d-flex align-items-center' >
@@ -51,17 +51,31 @@ export default function Home() {
             <GalleryList className="" images={images} slice={slice} />
         </Container>
         </Row>
+        <Row className='p-0 row-cols-lg-2 row-cols-1 py-3 my-3 border-bottom d-flex align-items-center' > 
+          <Col className='text-light lh-lg order-lg-1'>
+            <div>
+            <Markdown rehypePlugins={[rehypeRaw]}>
+              {about3()}
+            </Markdown>
+            </div>
+          </Col>
+        <Col className='text-light lh-lg'>
+          If you stumbled onto this page, it is still WIP, so pardon some touching up that's needed
+        </Col>
+          
+        </Row>
+        
         <Row className='row-cols-lg-2 row-cols-1 py-3 my-3 border-bottom d-flex' >
-          <Col className='text-light lh-lg d-flex order-lg-1  align-items-center'>
+          <Col className='text-light lh-lg d-flex  align-items-center'>
             <div>
               <Markdown rehypePlugins={[rehypeRaw]}>
                 {about2()}
               </Markdown>
-              Find all my projects on my <Link className='col p-0 link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover' to="/portfolio">portfolio</Link>.
+              
             </div> 
 
           </Col>
-          <Link className='col p-1 pb-3 order-lg-0 py-3' style={{textDecoration: "none"}} to={`/portfolio/spacegame`}>
+          <Link className='col p-2 pb-3 order-lg-0 py-3' style={{textDecoration: "none"}} to={`/portfolio/spacegame`}>
               <Card className=" text-light bg-secondary bg-opacity-75 border-white border-1 rounded-3 m-0 p-0 wrap shadow" >
                 <Ratio aspectRatio={1/2}>
                   <Card.Img variant="top" className="m-0 p-0" style={{ 
@@ -81,35 +95,6 @@ export default function Home() {
               </Card>
           </Link>
         </Row>
-        <Row className='p-0 row-cols-lg-2 row-cols-1 py-3 my-3 border-bottom d-flex align-items-center' > 
-          <Col className='text-light lh-lg'>
-            <div>
-            <Markdown rehypePlugins={[rehypeRaw]}>
-              {about3()}
-            </Markdown>
-            </div>
-          </Col>
-          <Link className='col p-1 pb-3 order-lg-0 py-3' style={{textDecoration: "none"}}  to={`/portfolio/spacegame`}>
-              <Card className=" text-light bg-secondary bg-opacity-75 border-white border-1 rounded-3 m-0 p-0 wrap shadow" >
-                <Ratio aspectRatio={1/2}>
-                  <Card.Img variant="top" className="m-0 p-0" style={{ 
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center', 
-                    backgroundImage: `url(${site.image})`}} />
-                </Ratio>
-                <Card.Body className="p-0 m-0" >
-                  <Container className="p-3" >
-                    <Card.Title className="text-primary fs-3 border-bottom border-1">    
-                          <strong>{site.title}</strong>
-                    </Card.Title>
-
-                    <Card.Text>{site.tidbit}</Card.Text>
-                  </Container>
-                </Card.Body>
-              </Card>
-          </Link>
-        </Row>
-        
       </Container>
       </>
       );

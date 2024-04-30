@@ -6,7 +6,7 @@ const Bio = () => {
             <Container>
                 <Row>
                 <Col>
-                <Ratio className="image rounded-3 shadow-lg" style={{
+                <Ratio className="image rounded-3 shadow-lg m-0 p-0" style={{
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundImage: `url(/thumbnail/thumb-me.jpg)`}} 
