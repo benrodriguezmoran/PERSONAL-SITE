@@ -7,8 +7,8 @@ const Blog = ({blogs = []}) => {
 return (
     <>
         {blogs && blogs.map((blog) => (
-        <div className="col" key={blog._id} >
-        <Link to={`/blog/${blog.path}`}>
+        
+        <Link className="col p-2" key={blog._id} to={`/blog/${blog.path}`}>
         <Ratio aspectRatio={3 / 4}>
         <Card className="text-light bg-transparent  border border-white border-1 rounded-3 m-0 wrap shadow" >
             <Card.Body className="" >
@@ -23,7 +23,7 @@ return (
         </Card>
         </Ratio>
         </Link>
-        </div>))}
+        ))}
     </>
     );
 } 

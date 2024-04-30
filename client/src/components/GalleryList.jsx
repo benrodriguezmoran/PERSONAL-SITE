@@ -36,7 +36,7 @@ const GalleryList = ({images = [], slice = 0}) => {
 return (
     <>
         {imagesIn && imagesIn.map((image, idx) => (
-            <Button key={idx}  className="p-1 m-0 rounded-3 " variant="link" 
+            <Button key={idx}  className="p-2 m-0 rounded-3 " variant="link" 
             onClick={(event) => {event.preventDefault(true); setShow(true); setModalData(image)}}>
                 <Ratio className="image rounded-3 shadow-lg" style={{
                     backgroundSize: 'cover',

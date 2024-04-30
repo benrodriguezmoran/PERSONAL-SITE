@@ -24,10 +24,9 @@ const Portfolio = ({projects = []}) => {
 return (
     <>
         {projects && projects.map((project) => (
-        <div className="col" key={project._id} >
-        <Link style={{textDecoration: "none"}} to={`/portfolio/${project.path}`}>
+        <Link className='col p-2' style={{textDecoration: "none"}} key={project._id} to={`/portfolio/${project.path}`}>
         <Ratio aspectRatio={ratio/11}className="p-0 m-0" >
-        <Card className="text-light bg-secondary  border-white border-1 rounded-3 m-0 p-0 wrap shadow" >
+        <Card className="text-light bg-secondary bg-opacity-75 border-white border-1 rounded-3 m-0 p-0 wrap shadow" >
             <Ratio aspectRatio={1/2}>
             <Card.Img variant="top" className="m-0 p-0" style={{ 
                 backgroundSize: 'cover',
@@ -46,7 +45,7 @@ return (
         </Card>
         </Ratio>
         </Link>
-        </div>))}
+        ))}
     </>
     );
 } 
