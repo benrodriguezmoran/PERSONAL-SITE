@@ -13,7 +13,7 @@ export default function Home() {
         variables: { path : "spacegame" },
       });
   const siteData = useQuery(QUERY_PROJECT, {
-        variables: { path : "site" },
+        variables: { path : "vector" },
       });    
   const galleryData = useQuery(QUERY_GALLERY);
   var project = projectData.data?.project || [];
@@ -59,9 +59,25 @@ export default function Home() {
             </Markdown>
             </div>
           </Col>
-        <Col className='text-light lh-lg'>
-          If you stumbled onto this page, it is still WIP, so pardon some touching up that's needed
-        </Col>
+          <Link className='col p-2 pb-3 order-lg-0 py-3' style={{textDecoration: "none"}} to={`/portfolio/vector`}>
+              <Card className=" text-light bg-secondary bg-opacity-75 border-white border-1 rounded-3 m-0 p-0 wrap shadow" >
+                <Ratio aspectRatio={1/2}>
+                  <Card.Img variant="top" className="m-0 p-0" style={{ 
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center', 
+                    backgroundImage: `url(${site.image})`}} />
+                </Ratio>
+                <Card.Body className="p-0 m-0" >
+                  <Container className="p-3" >
+                    <Card.Title className="text-primary fs-3 border-bottom border-1">    
+                          <strong>{site.title}</strong>
+                    </Card.Title>
+
+                    <Card.Text>{site.tidbit}</Card.Text>
+                  </Container>
+                </Card.Body>
+              </Card>
+          </Link>
           
         </Row>
         
